@@ -23,7 +23,7 @@ where the minimal object (arg) that is passed is
       t: this
     };
  
-The selector must pass an attribute: **data-activity_id**
+The selector must pass an attribute: **data-post_id**
 where this attribute is the Google+ post id, e.g. <div data-post_id="63P2Gs8Bnsn"></div>
 
 which can be found as the 11-character string at the end of the URL for the post (you can click the arrow icon in upper right of panel on the post to go to the URL for that post). 
