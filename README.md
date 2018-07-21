@@ -23,10 +23,10 @@ where the minimal object (arg) that is passed is
       t: this
     };
  
-The selector must pass an attribute: **data-post_id**
-where this attribute is the Google+ post id, e.g. <div data-post_id="63P2Gs8Bnsn"></div>
+The selector must pass an attribute: **data-user_id**
+where this attribute is the Google+ user id, e.g. <div data-user_id="102463414105368446603"></div>
 
-which can be found as the 11-character string at the end of the URL for the post (you can click the arrow icon in upper right of panel on the post to go to the URL for that post). 
+which can be found as the numeric string at the end of the URL for when clicking on the nav menu 'Profile'. 
  
 The default options can be overwritten by also passing "user_defined_settings":
 
@@ -41,9 +41,9 @@ The default options can be overwritten by also passing "user_defined_settings":
           delay: 250,
           destroyCallback: false,
           destroyOnMouseleave: true,
+          filterPosts: [],
           limit: 5,
           maxWidth: .25,
-          type: 'posts',
           verbose: false
       }
     };
@@ -74,15 +74,15 @@ destroyCallback:
 destroyOnMouseleave:
     <boolean>: If tooltip is moused over, it will be destroyed on mouseleave (if set to true, otherwise not destroyed)
 
+filterPosts:
+    <array>: If included, only posts which correspond to the 11-character post_id (found at end of URL when clicking on arrow at upper right of a post) will be used to populate the tooltip
+
 limit:
   <number>: Set the number of returned records to display in the tooltip, otherwise 5 records will be included in output (-1 for all)
 
 maxWidth:
     <number>: relative to window width, where window width = 1, will be constrained to be between .15 and .45
 
-type
-    <string>: Either 'posts' or 'comments' (comments requires the 11-character id for the specific post)
-
 verbose:
-    <boolean>: If set to true, additional data, such as publish date, url, statistics, and description will be used to populate the tooltip. If set to false, the minimal data (e.g., title for the 'type=title' option or comments
+    <boolean>: If set to true, additional data, such as publish date, url, statistics, and description will be used to populate the tooltip. If set to false, the minimal data (e.g., title of a post) will be included
 
