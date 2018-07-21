@@ -15,7 +15,7 @@
             },
             settings = arg.user_defined_settings ? $.extend(default_settings, arg.user_defined_settings) : default_settings,
             Id = $(arg.t).attr("data-gplus_id"),
-            gp_key = 'AIzaSyDPqCQOuK6lrVu-MwWzJVon3HH8lnG4xJ4',
+            gp_key = /* YOUR GOOGLEPLUS KEY GOES HERE */,
             w = $(window),
             ww = w.width(),
             wh = w.height(),
