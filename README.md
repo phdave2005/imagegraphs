@@ -42,10 +42,9 @@ The default options can be overwritten by also passing "user_defined_settings":
           destroyCallback: false,
           destroyOnMouseleave: true,
           filterPosts: [],
+          hiddenSections: [],
           limit: 5,
-          maxWidth: .25,
-          showComments: false,
-          verbose: false
+          maxWidth: .25
       }
     };
    
@@ -78,15 +77,12 @@ destroyOnMouseleave:
 filterPosts:
     <array>: If included, only posts which correspond to the 11-character post_id (found at end of URL when clicking on arrow at upper right of a post) will be used to populate the tooltip
 
+hiddenSections:
+    <array>: If included in the array, these sections will be excluded in the tooltip output. Possible values are: "title", "published", "content", "url", "replies", "plusones", "resharers"
+
 limit:
   <number>: Set the number of returned records to display in the tooltip, otherwise 5 records will be included in output (-1 for all)
 
 maxWidth:
     <number>: relative to window width, where window width = 1, will be constrained to be between .15 and .45
-
-showComments:
-    <boolean>: If set to true, comments for each post will be included
-
-verbose:
-    <boolean>: If set to true, additional data, such as publish date, url, statistics, and description will be used to populate the tooltip. If set to false, the minimal data (e.g., title of a post) will be included
 
