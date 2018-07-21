@@ -44,6 +44,7 @@ The default options can be overwritten by also passing "user_defined_settings":
           filterPosts: [],
           limit: 5,
           maxWidth: .25,
+          showComments: false,
           verbose: false
       }
     };
@@ -82,6 +83,9 @@ limit:
 
 maxWidth:
     <number>: relative to window width, where window width = 1, will be constrained to be between .15 and .45
+
+showComments:
+    <boolean>: If set to true, comments for each post will be included
 
 verbose:
     <boolean>: If set to true, additional data, such as publish date, url, statistics, and description will be used to populate the tooltip. If set to false, the minimal data (e.g., title of a post) will be included
