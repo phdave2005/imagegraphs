@@ -10,7 +10,7 @@
  *   http://www.gnu.org/licenses/gpl.html
  */
  
-   The gplusTip tooltip is a pure jQuery-based tooltip which first makes a Google+ API request to pull data, and then uses this data to populate the tooltip before rendering it. As such, you must add your Google+ API key to replace the comment (in the accompanying JS file) that says " YOUR GOOGLE+ KEY GOES HERE "; gplusTip is enabled to use all default values by simply invoking it as a callback as follows:
+   The gplusTip tooltip is a pure jQuery-based tooltip which first makes a Google+ API request to pull data, and then uses this data to populate the tooltip before rendering it. As such, you must add your Google+ API key to replace the comment (in the accompanying JS file) that says " YOUR GOOGLEPLUS KEY GOES HERE "; gplusTip is enabled to use all default values by simply invoking it as a callback as follows:
     
     $(selector).on("mouseenter", function () {
         $(this).gplusTip(arg);
